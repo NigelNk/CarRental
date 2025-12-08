@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="796.0" prefWidth="1249.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrental.controllers.CustomerController">
+
+    <TableView fx:id="customerTable" layoutX="120.0" layoutY="82.0" prefHeight="647.0" prefWidth="948.0">
+        <columns>
+            <TableColumn fx:id="colID" prefWidth="100" text="Customer ID" />
+
+            <TableColumn fx:id="colNames" prefWidth="150" text="Name" />
+            <TableColumn fx:id="colPhone" prefWidth="100" text="Phone" />
+
+            <TableColumn fx:id="colAddress" prefWidth="150" text="Physical Address" />
+         <TableColumn fx:id="actionColumn" prefWidth="150" text="Action" />
+        </columns>
+    </TableView>
+   <Label layoutX="534.0" layoutY="14.0" text="Customers">
+      <font>
+         <Font name="Times New Roman Bold" size="26.0" />
+      </font>
+   </Label>
+
+</AnchorPane>

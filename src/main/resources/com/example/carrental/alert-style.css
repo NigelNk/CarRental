@@ -1,0 +1,58 @@
+.custom-alert {
+    -fx-background-color: #ffffff;
+    -fx-border-color: transparent;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0, 0, 4);
+    -fx-font-family: "Segoe UI", "Roboto", sans-serif;
+    -fx-padding: 20;
+}
+
+/* Header text */
+.dialog-pane .header-panel .label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+
+/* Content text */
+.dialog-pane .content {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555555;
+}
+
+/* Buttons */
+.dialog-pane .button-bar .button {
+    -fx-background-color: #1a35bc;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.dialog-pane .button-bar .button:hover {
+    -fx-background-color: #1a35bc;
+}
+#notificationButton:hover {
+    -fx-background-color: #f0f2f5;
+    -fx-background-radius: 50%;
+}
+
+#notificationButton:pressed {
+    -fx-background-color: #dce1e6;
+}
+
+.sidebar-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.sidebar-btn:hover {
+    -fx-background-color: #7f8c8d;
+    -fx-background-radius: 8;
+}

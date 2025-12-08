@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<AnchorPane prefHeight="712.0" prefWidth="1272.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrental.controllers.VehicleController">
+
+    <ScrollPane fitToWidth="true" hbarPolicy="NEVER" layoutY="14.0" prefHeight="628.0" prefWidth="1235.0" style="-fx-background-color: transparent; -fx-padding: 10;">
+
+        <AnchorPane prefHeight="598.0" prefWidth="1214.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 20; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10,0,0,2);">
+            <FlowPane fx:id="vehiclesContainer" alignment="TOP_CENTER" hgap="20" style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 20;" vgap="20" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        </AnchorPane>
+    </ScrollPane>
+
+</AnchorPane>

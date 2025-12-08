@@ -1,0 +1,222 @@
+/* Sidebar Buttons */
+.sidebar-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ecf0f1;
+    -fx-font-size: 15px;
+    -fx-alignment: CENTER;
+    -fx-padding: 10 15 10 20;
+    -fx-cursor: hand;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-transition: all 0.3s ease;
+}
+
+.sidebar-btn:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-text-fill: #0bd5ac;
+}
+
+.sidebar-btn:pressed {
+    -fx-background-color: #1abc9c;
+    -fx-text-fill: white;
+}
+
+.sidebar-btn.active {
+    -fx-background-color: #0ec5a0;
+    -fx-text-fill: white;
+}
+/*view More button */
+.small-btn {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+    -fx-alignment: CENTER;
+    -fx-padding: 10 15 10 20;
+    -fx-cursor: hand;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-transition: all 0.3s ease;
+}
+
+.small-btn:hover {
+    -fx-text-fill: #f4d007;;
+}
+
+.small-btn:pressed {
+    -fx-background-color: #1abc9c;
+    -fx-text-fill: white;
+}
+
+.small-btn.active {
+    -fx-background-color: #1abc9c;
+    -fx-text-fill: white;
+}
+
+.header-label {
+    -fx-font-size: 20px;
+    -fx-text-fill: #878684;
+    -fx-font-weight: bold;
+}
+
+.save-btn{
+    -fx-background-color: #3030e1;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20px;
+    -fx-alignment: CENTER;
+    -fx-padding: 10 15 10 20;
+    -fx-cursor: hand;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+}
+
+.save-btn:hover {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #5353ee;
+}
+
+.save-btn:pressed {
+    -fx-background-color: #1abc9c;
+    -fx-text-fill: white;
+}
+
+.input-field, .dropdown {
+    -fx-pref-height: 60;
+    -fx-pref-width: 600;
+    -fx-font-size: 18px;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-background-color: #f4f6f9;
+    -fx-border-color: #dcdde1;
+    -fx-padding: 0 10 0 10;
+}
+
+.speed-field, .speedTypeDropdown {
+    -fx-pref-height: 60;
+    -fx-pref-width: 297;
+    -fx-font-size: 18px;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-background-color: #f4f6f9;
+    -fx-border-color: #dcdde1;
+    -fx-padding: 0 10 0 10;
+}
+
+.input-field:focused, .dropdown:focused {
+    -fx-border-color: #3498db;
+    -fx-background-color: #ffffff;
+}
+
+.checkbox {
+    -fx-font-size: 14px;
+    -fx-text-fill: #2c3e50;
+}
+
+.primary-btn {
+    -fx-background-color: #1029a9;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-pref-width: 140;
+    -fx-pref-height: 50;
+}
+
+.primary-btn:hover {
+    -fx-background-color: #2980b9;
+}
+
+.secondary-btn {
+    -fx-background-color: #ecf0f1;
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-pref-width: 150;
+    -fx-pref-height: 40;
+}
+
+.secondary-btn:hover {
+    -fx-background-color: #bdc3c7;
+}
+
+/* Stylish Vehicle Image */
+.vehicle-image {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 15, 0.5, 0, 4);
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-border-color: #2d89ef;
+    -fx-border-width: 2;
+    -fx-border-radius: 12;
+    -fx-padding: 10;
+    -fx-cursor: hand;
+}
+
+.vehicle-image:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-border-color: #1e5bb5;
+}
+
+.modern-scrollpane {
+    -fx-background-color: #1c1d1d;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-pane .increment-button,
+.scroll-pane .decrement-button {
+    -fx-opacity: 0;
+    -fx-pref-width: 6;
+    -fx-pref-height: 0;
+}
+
+.scroll-pane .scroll-bar:horizontal,
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-pane .thumb {
+    -fx-background-color: rgba(100, 100, 100, 0.4);
+    -fx-background-radius: 5;
+    -fx-pref-width: 0;
+}
+#notificationContainer:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+#notificationButton:hover {
+    -fx-background-color: #f2f4f8;
+    -fx-background-radius: 50%;
+}
+
+#notificationCount {
+    -fx-background-color: #e74c3c;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 10px;
+}
+
+.hbox {
+    -fx-alignment: center-right;
+}
+
+.tooltip {
+    -fx-background-color: #2c3e50;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 6 10 6 10;
+    -fx-background-radius: 6;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0.3, 0, 1);
+}
+
+
+
+
+
+
+
+
+

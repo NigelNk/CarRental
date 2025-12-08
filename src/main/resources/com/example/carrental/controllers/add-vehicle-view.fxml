@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="861.0" prefWidth="1311.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrental.controllers.AddVehicleController">
+
+    <TextField fx:id="vehicleIDField" layoutX="259.0" layoutY="181.0" onMouseEntered="#vehicleIdTooltipShow" onMouseExited="#vehicleIdTooltipHide" prefHeight="61.0" prefWidth="1015.0" promptText="Vehicle ID" styleClass="input-field" />
+    <TextField fx:id="brandField" layoutX="259.0" layoutY="108.0" onMouseEntered="#brandTooltipShow" onMouseExited="#brandTooltipHide" promptText="Brand" styleClass="input-field" />
+    <TextField fx:id="modelField" layoutX="259.0" layoutY="327.0" onMouseEntered="#modelTooltipShow" onMouseExited="#modelTooltipHide" promptText="Model" styleClass="input-field" />
+
+    <ComboBox fx:id="vehicleTypeBox" layoutX="259.0" layoutY="254.0" onAction="#selectedType" onMouseEntered="#typeTooltipShow" onMouseExited="#typeTooltipHide" promptText="Select Vehicle Type" styleClass="dropdown">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Car" />
+                <String fx:value="Truck" />
+                <String fx:value="Bike" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <ComboBox fx:id="transmissionCombo" layoutX="259.0" layoutY="401.0" onMouseEntered="#transmissionTooltipShow" onMouseExited="#transmissionTooltipHide" promptText="Select Transmission" styleClass="dropdown">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Manual" />
+                <String fx:value="Automatic" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <ImageView fx:id="vehicleImageView" fitHeight="200" fitWidth="196.0" layoutX="22.0" layoutY="235.0" preserveRatio="true" styleClass="vehicle-image" />
+    <!-- Upload Button -->
+    <Button layoutX="510.0" layoutY="611.0" onAction="#handleUploadImage" prefHeight="36.0" prefWidth="152.0" text="Upload Vehicle Image" />
+
+    <Button contentDisplay="RIGHT" layoutX="516.0" layoutY="667.0" onAction="#handleSaveVehicle" prefWidth="213.0" styleClass="primary-btn" text="Save">
+        <graphic>
+            <ImageView>
+                <Image url="@../icons/save.png" />
+            </ImageView>
+        </graphic>
+    </Button>
+    <TextField fx:id="dailyRateField" layoutX="259.0" layoutY="541.0" onMouseEntered="#rateTooltipShow" onMouseExited="#rateTooltipHide" promptText="Daily Rate" styleClass="input-field" />
+    <TextField fx:id="speedField" layoutX="259.0" layoutY="470.0" onMouseEntered="#speedTooltipShow" onMouseExited="#speedTooltipHide" promptText="Speed" styleClass="speed-field" />
+   <Label fx:id="brandLabel" layoutX="879.0" layoutY="125.0" text="Brand" visible="false">
+      <font>
+         <Font name="System Bold" size="17.0" />
+      </font>
+   </Label>
+   <Label fx:id="vehicleIdLabel" layoutX="879.0" layoutY="198.0" text="Vehicle ID" visible="false">
+      <font>
+         <Font name="System Bold" size="17.0" />
+      </font>
+   </Label>
+   <Label fx:id="typeLabel" layoutX="879.0" layoutY="271.0" text="Type" visible="false">
+      <font>
+         <Font name="System Bold" size="17.0" />
+      </font>
+   </Label>
+   <Label fx:id="modelLabel" layoutX="879.0" layoutY="344.0" text="Model" visible="false">
+      <font>
+         <Font name="System Bold" size="17.0" />
+      </font>
+   </Label>
+   <Label fx:id="transmissionLabel" layoutX="881.0" layoutY="421.0" text="Transmission" visible="false">
+      <font>
+         <Font name="System Bold" size="17.0" />
+      </font>
+   </Label>
+   <Label fx:id="speedLabel" layoutX="879.0" layoutY="486.0" text="Speed" visible="false">
+      <font>
+         <Font name="System Bold" size="17.0" />
+      </font>
+   </Label>
+   <Label fx:id="rateLabel" layoutX="881.0" layoutY="558.0" text="Daily Rate" visible="false">
+      <font>
+         <Font name="System Bold" size="17.0" />
+      </font>
+   </Label>
+   <Label layoutX="463.0" layoutY="25.0" text="Add New Vehicle">
+      <font>
+         <Font name="Times New Roman Bold" size="29.0" />
+      </font>
+   </Label>
+   <ComboBox fx:id="speedTypeCombo" layoutX="559.0" layoutY="469.0" prefWidth="483.0" promptText="Select Speed Format" styleClass="speedTypeDropdown">
+      <items>
+         <FXCollections fx:factory="observableArrayList">
+            <String fx:value="km/hr" />
+            <String fx:value="m/hr" />
+         </FXCollections>
+      </items>
+   </ComboBox>
+
+</AnchorPane>
